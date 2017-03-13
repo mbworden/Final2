@@ -18,7 +18,7 @@ var NoCurrentMovie = require('./components/NoCurrentMovie')
 var SortBar = require('./components/SortBar')
 
 // There should really be some JSON-formatted data in movies.json, instead of an empty array.
-// I started writing this command to extract the data from the learn-sql workspace 
+// I started writing this command to extract the data from the learn-sql workspace
 // on C9, but it's not done yet :) You must have the csvtojson command installed on your
 // C9 workspace for this to work.
 // npm install -g csvtojson
@@ -113,7 +113,7 @@ var App = React.createClass({
   componentDidMount: function() {
     // We'll need to enter our Firebase configuration at the top of this file and
     // un-comment this to make the Firebase database work
-    // base.syncState('/movies', { context: this, state: 'movies', asArray: true })
+    base.syncState('/movies', { context: this, state: 'movies', asArray: true })
   },
   render: function() {
     return (
